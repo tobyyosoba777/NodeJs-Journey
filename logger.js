@@ -2,15 +2,13 @@ const { randomUUID } = require("crypto");
 const EventEmitter = require("events");
 const emmitter = new EventEmitter();
 
-function emitterFunction() {
-    emmitter.on("MessageLogged", (e) => {
-        console.log('Listener Boosted', e)
-    })
-};
+emmitter.on("MessageLogged", function(e) {
+    console.log('Listener Boosted', e)
+})
 
 emmitter.emit("MessageLogged", { Id: 21, RandomId: randomUUID()});
 
-module.exports.emit = emitterFunction;
+module.exports.emits = emmitter;
 
 console.log(__dirname)
 console.log(__filename)

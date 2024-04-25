@@ -15,4 +15,17 @@ subtract.subtract(70, 50)
 multiply.multiply(20, 20)
 expo.expon(20, 3)
 
-emit.emit()
+
+
+const eventEmitter = require("events");
+
+
+
+const Logger = require('./loggers')
+const loggers = new Logger();
+
+loggers.on('MessageLogged', (arg) => {
+    console.log('Listener Called', arg);
+});
+
+loggers.log('message');
