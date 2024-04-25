@@ -1,7 +1,5 @@
 # Node JS Intro
 
-# My Node.js Learning Journey
-
 Welcome to my Node.js learning journey repository! This repository serves as a documentation of my exploration of Node.js and its various modules. Let's start with some basic concepts:
 
 ## What is Node.js?
