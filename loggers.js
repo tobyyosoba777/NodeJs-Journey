@@ -10,7 +10,7 @@ class Logger extends eventEmitter {
         console.log(message)
 
     //Raise an Event
-    this.emit('MessageLogged', { id: 22, messageID: uuid(), errorId: randomUUID()})
+    this.emit('', { id: 22, messageID: uuid(), errorId: randomUUID()})
     }
 }
 
