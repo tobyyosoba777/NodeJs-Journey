@@ -15,5 +15,4 @@ class Logger extends eventEmitter {
 }
 
 
-
 module.exports = Logger;
