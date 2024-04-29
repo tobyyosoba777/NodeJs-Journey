@@ -4,7 +4,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
     if(req.url === '/') {
         res.write('Hello world')
-        res.end
+        res.end()
     }
     if (req.url === '/api/courses') {
         res.write(JSON.stringify([{course_1: "Mosh javascript course", course_2: "Web Dev simplified react course"}]))
